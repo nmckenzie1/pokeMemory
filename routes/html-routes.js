@@ -8,6 +8,6 @@ module.exports =  function(app){
             res.redirect("/game");
           }
         res.sendFile(path.join(__dirname, "../public/login.html"))
-    },
+    })
     
 };
