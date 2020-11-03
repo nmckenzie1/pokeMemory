@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>POKEMON MEMORY GAME</title>
 </head>
 <body>
@@ -15,116 +15,35 @@
     <div class="container">
         <div class="row" id="header">
             <div class="col-4">
-                <a href="https://google.com" target="_blank">SCORE: 0</a>
+                <h1>SCORE: 0</h1>
+                <!-- <span id="score"></span> -->
             </div>
             <div class="col-4">
-                <a href="https://google.com" target="_blank">POKEMON MEMORY GAME</a>
+                <h1>POKEMON MEMORY GAME</h1>
             </div>
             <div class="col-4">
-                <div>Minute: <span id=“minute”></span></div>
-                <div>Second: <span id=“seconds”></span></div>
+                <div>Time Left: <span id="time"></span></div>
+                
             </div>
     </div>
     <!-- button section -->
     <div class="container">
         <div class="row" id="button-row">
             <div class="col-4">
-                <button id="start-btn" type="button" class="btn btn-danger btn-lg" onclick="">START GAME</button>
+                <button id="start-btn" type="button" class="btn btn-danger btn-lg">START GAME</button>
             </div>
             <div class="col-4">
-                <a href="https://google.com" target="_blank">PLAYER GUESS COUNT: 0</a>
+                <h1>PLAYER GUESS COUNT: </h1>
+                <!-- <span id="something"></span> -->
             </div>
             <div class="col-4">
                 <button type="button" class="btn btn-danger btn-lg" onclick= "location.href = 'hiscores.html'">HISCORES</button>
             </div>
             <hr class="hr-size">
         </div>
-    <!-- cards section -->
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-            <div class="col-3">
-                <a href="https://google.com" target="_blank"><img class="portfolio-img center" src="img/card.png"
-                        alt="html"></a>
-            </div>
-        </div>
-        <hr class="hr-size">
-    </div> 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
+    <div id="game"></div>
+
+    
+    <script src="js/game.js"></script>
+    </body>
 </html>
