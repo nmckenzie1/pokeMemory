@@ -3,6 +3,7 @@
 
 // Dependencies
 // =============================================================
+const passport = require("./config/passport")
 const express = require("express");
 
 // Sets up the Express App
@@ -21,7 +22,7 @@ app.use(express.static("/public"));
 
 // Routes
 // // =============================================================
-// require("./routes/api-routes.js")(app);
+require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
