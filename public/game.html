@@ -1,23 +1,17 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <title>POKEMON MEMORY GAME</title>
 </head>
-
 <body>
-
     <!-- header section -->
-
     <div class="container">
         <div class="row" id="header">
             <div class="col-4">
@@ -27,30 +21,25 @@
                 <a href="https://google.com" target="_blank">POKEMON MEMORY GAME</a>
             </div>
             <div class="col-4">
-                <a href="https://google.com" target="_blank">TIME: 0:00</a>
+                <div>Minute: <span id=“minute”></span></div>
+                <div>Second: <span id=“seconds”></span></div>
             </div>
-        <hr>
     </div>
-
     <!-- button section -->
-
     <div class="container">
         <div class="row" id="button-row">
             <div class="col-4">
-                <button type="button" class="btn btn-danger btn-lg" onclick="">START GAME</button>
+                <button id="start-btn" type="button" class="btn btn-danger btn-lg" onclick="">START GAME</button>
             </div>
             <div class="col-4">
                 <a href="https://google.com" target="_blank">PLAYER GUESS COUNT: 0</a>
             </div>
             <div class="col-4">
-                <button type="button" class="btn btn-danger btn-lg"  onclick= "location.href = 'hiscores.html'">HISCORES</button>
+                <button type="button" class="btn btn-danger btn-lg" onclick= "location.href = 'hiscores.html'">HISCORES</button>
             </div>
-        <hr>
-    </div>
-
-
+            <hr class="hr-size">
+        </div>
     <!-- cards section -->
-
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -124,9 +113,8 @@
                         alt="html"></a>
             </div>
         </div>
-        <hr>
+        <hr class="hr-size">
     </div> 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -139,5 +127,4 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
