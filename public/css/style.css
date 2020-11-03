@@ -1,0 +1,153 @@
+/*elements*/
+
+body {
+    background-image: url(../img/ashwall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    
+    nav a:hover{
+        color: palegreen !important;
+    }
+    
+    /* h1, h3, h4 {
+        color: #343a40;
+        text-decoration: underline;
+        text-decoration-color:  #343a40;
+    } */
+    
+    img {
+        height: 200px;
+        margin: 5px 5px;
+     
+    }
+    
+    a {
+        color: white;
+    }
+    
+    a:hover {
+        color: blue;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #343a40;
+        padding: 20px;
+    }
+    
+    /*classes*/
+    
+    .col-3 {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .h1-home {
+        padding-top: 20px;
+        color: #343a40;
+    }
+    .navbar-dark .navbar-brand {
+        color: palegreen;
+    }
+    
+    .hr-color {
+        width: 80%;
+        height: 50px;
+    }
+    
+    .hr-size {
+        width: 60%;
+        height: 4px;
+        margin: 20px auto;
+        border-color: palegreen;
+    }
+    
+    /* .portfolio-img {
+        height: 150px;
+        border: solid;
+        border-color: palegreen;
+    } */
+    
+    .skill-img {
+        height: 75px;
+        text-align: center;
+    }
+    
+    .media {
+        margin-top: 20px;
+    }
+    
+    .media-body {
+        margin: 20px auto;
+    }
+    
+    .media .media-body {
+        margin-bottom: 0px;
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    
+    .full-stop {
+        color: palegreen;
+    }
+    
+    .contact-me {
+        color: palegreen;
+    }
+    
+    .footer-row {
+        margin: 20px auto;
+    }
+    
+    /*id's*/
+    
+    #button-row {
+        text-align: center;
+        margin: 20px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+    
+    }
+    
+    #skill-section {
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #skills-section {
+        margin: 10px auto;
+    }
+    
+    #contact {
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    #header {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+    }
+    
+    #linkedin-link {
+        text-align: right;
+    }
+    
+    #email-link {
+        text-align: left;
+    }
+    
+    #copyright {
+        color:  #343a40;
+        background-color: palegreen;
+        margin-top: 20px;
+    }
+    
+    
