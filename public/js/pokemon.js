@@ -1,0 +1,454 @@
+const cardsArray = [{
+    'name': 'bulbasaur',
+    'img': '../img/pokemon/bulbasaur.png'
+}, {
+    'name': 'ivysaur',
+    'img': '../img/pokemon/ivysaur.png'
+}, {
+    'name': 'venusaur',
+    'img': '../img/pokemon/venusaur.png'
+}, {
+    'name': 'charmander',
+    'img': '../img/pokemon/charmander.png'
+}, {
+    'name': 'charmeleon',
+    'img': '../img/pokemon/charmeleon.png'
+}, {
+    'name': 'charizard',
+    'img': '../img/pokemon/charizard.png'
+}, {
+    'name': 'squirtle',
+    'img': '../img/pokemon/squirtle.png'
+}, {
+    'name': 'wartortle',
+    'img': '../img/pokemon/wartortle.png'
+}, {
+    'name': 'blastoise',
+    'img': '../img/pokemon/blastoise.png'
+}, {
+    'name': 'caterpie',
+    'img': '../img/pokemon/caterpie.png'
+}, {
+    'name': 'metapod',
+    'img': '../img/pokemon/metapod.png'
+}, {
+    'name': 'butterfree',
+    'img': '../img/pokemon/butterfree.png'
+}, {
+    'name': 'weedle',
+    'img': '../img/pokemon/weedle.png'
+}, {
+    'name': 'kakuna',
+    'img': '../img/pokemon/kakuna.png'
+}, {
+    'name': 'beedrill',
+    'img': '../img/pokemon/beedrill.png'
+}, {
+    'name': 'pidgey',
+    'img': '../img/pokemon/pidgey.png'
+}, {
+    'name': 'pidgeotto',
+    'img': '../img/pokemon/pidgeotto.png'
+}, {
+    'name': 'pidgeot',
+    'img': '../img/pokemon/pidgeot.png'
+}, {
+    'name': 'rattata',
+    'img': '../img/pokemon/rattata.png'
+}, {
+    'name': 'raticate',
+    'img': '../img/pokemon/raticate.png'
+}, {
+    'name': 'spearow',
+    'img': '../img/pokemon/spearow.png'
+}, {
+    'name': 'fearow',
+    'img': '../img/pokemon/fearow.png'
+}, {
+    'name': 'ekans',
+    'img': '../img/pokemon/ekans.png'
+}, {
+    'name': 'arbok',
+    'img': '../img/pokemon/arbok.png'
+}, {
+    'name': 'pikachu',
+    'img': '../img/pokemon/pikachu.png'
+}, {
+    'name': 'raichu',
+    'img': '../img/pokemon/raichu.png'
+}, {
+    'name': 'sandshrew',
+    'img': '../img/pokemon/sandshrew.png'
+}, {
+    'name': 'sandslash',
+    'img': '../img/pokemon/sandslash.png'
+}, {
+    'name': 'nidoran-f',
+    'img': '../img/pokemon/nidoran-f.png'
+}, {
+    'name': 'nidorina',
+    'img': '../img/pokemon/nidorina.png'
+}, {
+    'name': 'nidoqueen',
+    'img': '../img/pokemon/nidoqueen.png'
+}, {
+    'name': 'nidoran-m',
+    'img': '../img/pokemon/nidoran-m.png'
+}, {
+    'name': 'nidorino',
+    'img': '../img/pokemon/nidorino.png'
+}, {
+    'name': 'nidoking',
+    'img': '../img/pokemon/nidoking.png'
+}, {
+    'name': 'clefairy',
+    'img': '../img/pokemon/clefairy.png'
+}, {
+    'name': 'clefable',
+    'img': '../img/pokemon/clefable.png'
+}, {
+    'name': 'vulpix',
+    'img': '../img/pokemon/vulpix.png'
+}, {
+    'name': 'ninetales',
+    'img': '../img/pokemon/ninetales.png'
+}, {
+    'name': 'jigglypuff',
+    'img': '../img/pokemon/jigglypuff.png'
+}, {
+    'name': 'wigglytuff',
+    'img': '../img/pokemon/wigglytuff.png'
+}, {
+    'name': 'zubat',
+    'img': '../img/pokemon/zubat.png'
+}, {
+    'name': 'golbat',
+    'img': '../img/pokemon/golbat.png'
+}, {
+    'name': 'oddish',
+    'img': '../img/pokemon/oddish.png'
+}, {
+    'name': 'gloom',
+    'img': '../img/pokemon/gloom.png'
+}, {
+    'name': 'vileplume',
+    'img': '../img/pokemon/vileplume.png'
+}, {
+    'name': 'paras',
+    'img': '../img/pokemon/paras.png'
+}, {
+    'name': 'parasect',
+    'img': '../img/pokemon/parasect.png'
+}, {
+    'name': 'venonat',
+    'img': '../img/pokemon/venonat.png'
+}, {
+    'name': 'venomoth',
+    'img': '../img/pokemon/venomoth.png'
+}, {
+    'name': 'diglett',
+    'img': '../img/pokemon/diglett.png'
+}, {
+    'name': 'dugtrio',
+    'img': '../img/pokemon/dugtrio.png'
+}, {
+    'name': 'meowth',
+    'img': '../img/pokemon/meowth.png'
+}, {
+    'name': 'persian',
+    'img': '../img/pokemon/persian.png'
+}, {
+    'name': 'psyduck',
+    'img': '../img/pokemon/psyduck.png'
+}, {
+    'name': 'golduck',
+    'img': '../img/pokemon/golduck.png'
+}, {
+    'name': 'mankey',
+    'img': '../img/pokemon/mankey.png'
+}, {
+    'name': 'primeape',
+    'img': '../img/pokemon/primeape.png'
+}, {
+    'name': 'growlithe',
+    'img': '../img/pokemon/growlithe.png'
+}, {
+    'name': 'arcanine',
+    'img': '../img/pokemon/arcanine.png'
+}, {
+    'name': 'poliwag',
+    'img': '../img/pokemon/poliwag.png'
+}, {
+    'name': 'poliwhirl',
+    'img': '../img/pokemon/poliwhirl.png'
+}, {
+    'name': 'poliwrath',
+    'img': '../img/pokemon/poliwrath.png'
+}, {
+    'name': 'abra',
+    'img': '../img/pokemon/abra.png'
+}, {
+    'name': 'kadabra',
+    'img': '../img/pokemon/kadabra.png'
+}, {
+    'name': 'alakazam',
+    'img': '../img/pokemon/alakazam.png'
+}, {
+    'name': 'machop',
+    'img': '../img/pokemon/machop.png'
+}, {
+    'name': 'machoke',
+    'img': '../img/pokemon/machoke.png'
+}, {
+    'name': 'machamp',
+    'img': '../img/pokemon/machamp.png'
+}, {
+    'name': 'bellsprout',
+    'img': '../img/pokemon/bellsprout.png'
+}, {
+    'name': 'weepinbell',
+    'img': '../img/pokemon/weepinbell.png'
+}, {
+    'name': 'victreebel',
+    'img': '../img/pokemon/victreebel.png'
+}, {
+    'name': 'tentacool',
+    'img': '../img/pokemon/tentacool.png'
+}, {
+    'name': 'tentacruel',
+    'img': '../img/pokemon/tentacruel.png'
+}, {
+    'name': 'geodude',
+    'img': '../img/pokemon/geodude.png'
+}, {
+    'name': 'graveler',
+    'img': '../img/pokemon/graveler.png'
+}, {
+    'name': 'golem',
+    'img': '../img/pokemon/golem.png'
+}, {
+    'name': 'ponyta',
+    'img': '../img/pokemon/ponyta.png'
+}, {
+    'name': 'rapidash',
+    'img': '../img/pokemon/rapidash.png'
+}, {
+    'name': 'slowpoke',
+    'img': '../img/pokemon/slowpoke.png'
+}, {
+    'name': 'slowbro',
+    'img': '../img/pokemon/slowbro.png'
+}, {
+    'name': 'magnemite',
+    'img': '../img/pokemon/magnemite.png'
+}, {
+    'name': 'magneton',
+    'img': '../img/pokemon/magneton.png'
+}, {
+    'name': 'farfetchd',
+    'img': '../img/pokemon/farfetchd.png'
+}, {
+    'name': 'doduo',
+    'img': '../img/pokemon/doduo.png'
+}, {
+    'name': 'dodrio',
+    'img': '../img/pokemon/dodrio.png'
+}, {
+    'name': 'seel',
+    'img': '../img/pokemon/seel.png'
+}, {
+    'name': 'dewgong',
+    'img': '../img/pokemon/dewgong.png'
+}, {
+    'name': 'grimer',
+    'img': '../img/pokemon/grimer.png'
+}, {
+    'name': 'muk',
+    'img': '../img/pokemon/muk.png'
+}, {
+    'name': 'shellder',
+    'img': '../img/pokemon/shellder.png'
+}, {
+    'name': 'cloyster',
+    'img': '../img/pokemon/cloyster.png'
+}, {
+    'name': 'gastly',
+    'img': '../img/pokemon/gastly.png'
+}, {
+    'name': 'haunter',
+    'img': '../img/pokemon/haunter.png'
+}, {
+    'name': 'gengar',
+    'img': '../img/pokemon/gengar.png'
+}, {
+    'name': 'onix',
+    'img': '../img/pokemon/onix.png'
+}, {
+    'name': 'drowzee',
+    'img': '../img/pokemon/drowzee.png'
+}, {
+    'name': 'hypno',
+    'img': '../img/pokemon/hypno.png'
+}, {
+    'name': 'krabby',
+    'img': '../img/pokemon/krabby.png'
+}, {
+    'name': 'kingler',
+    'img': '../img/pokemon/kingler.png'
+}, {
+    'name': 'voltorb',
+    'img': '../img/pokemon/voltorb.png'
+}, {
+    'name': 'electrode',
+    'img': '../img/pokemon/electrode.png'
+}, {
+    'name': 'exeggcute',
+    'img': '../img/pokemon/exeggcute.png'
+}, {
+    'name': 'exeggutor',
+    'img': '../img/pokemon/exeggutor.png'
+}, {
+    'name': 'cubone',
+    'img': '../img/pokemon/cubone.png'
+}, {
+    'name': 'marowak',
+    'img': '../img/pokemon/marowak.png'
+}, {
+    'name': 'hitmonlee',
+    'img': '../img/pokemon/hitmonlee.png'
+}, {
+    'name': 'hitmonchan',
+    'img': '../img/pokemon/hitmonchan.png'
+}, {
+    'name': 'lickitung',
+    'img': '../img/pokemon/lickitung.png'
+}, {
+    'name': 'koffing',
+    'img': '../img/pokemon/koffing.png'
+}, {
+    'name': 'weezing',
+    'img': '../img/pokemon/weezing.png'
+}, {
+    'name': 'rhyhorn',
+    'img': '../img/pokemon/rhyhorn.png'
+}, {
+    'name': 'rhydon',
+    'img': '../img/pokemon/rhydon.png'
+}, {
+    'name': 'chansey',
+    'img': '../img/pokemon/chansey.png'
+}, {
+    'name': 'tangela',
+    'img': '../img/pokemon/tangela.png'
+}, {
+    'name': 'kangaskhan',
+    'img': '../img/pokemon/kangaskhan.png'
+}, {
+    'name': 'horsea',
+    'img': '../img/pokemon/horsea.png'
+}, {
+    'name': 'seadra',
+    'img': '../img/pokemon/seadra.png'
+}, {
+    'name': 'goldeen',
+    'img': '../img/pokemon/goldeen.png'
+}, {
+    'name': 'seaking',
+    'img': '../img/pokemon/seaking.png'
+}, {
+    'name': 'staryu',
+    'img': '../img/pokemon/staryu.png'
+}, {
+    'name': 'starmie',
+    'img': '../img/pokemon/starmie.png'
+}, {
+    'name': 'mr-mime',
+    'img': '../img/pokemon/mr-mime.png'
+}, {
+    'name': 'scyther',
+    'img': '../img/pokemon/scyther.png'
+}, {
+    'name': 'jynx',
+    'img': '../img/pokemon/jynx.png'
+}, {
+    'name': 'electabuzz',
+    'img': '../img/pokemon/electabuzz.png'
+}, {
+    'name': 'magmar',
+    'img': '../img/pokemon/magmar.png'
+}, {
+    'name': 'pinsir',
+    'img': '../img/pokemon/pinsir.png'
+}, {
+    'name': 'tauros',
+    'img': '../img/pokemon/tauros.png'
+}, {
+    'name': 'magikarp',
+    'img': '../img/pokemon/magikarp.png'
+}, {
+    'name': 'gyarados',
+    'img': '../img/pokemon/gyarados.png'
+}, {
+    'name': 'lapras',
+    'img': '../img/pokemon/lapras.png'
+}, {
+    'name': 'ditto',
+    'img': '../img/pokemon/ditto.png'
+}, {
+    'name': 'eevee',
+    'img': '../img/pokemon/eevee.png'
+}, {
+    'name': 'vaporeon',
+    'img': '../img/pokemon/vaporeon.png'
+}, {
+    'name': 'jolteon',
+    'img': '../img/pokemon/jolteon.png'
+}, {
+    'name': 'flareon',
+    'img': '../img/pokemon/flareon.png'
+}, {
+    'name': 'porygon',
+    'img': '../img/pokemon/porygon.png'
+}, {
+    'name': 'omanyte',
+    'img': '../img/pokemon/omanyte.png'
+}, {
+    'name': 'omastar',
+    'img': '../img/pokemon/omastar.png'
+}, {
+    'name': 'kabuto',
+    'img': '../img/pokemon/kabuto.png'
+}, {
+    'name': 'kabutops',
+    'img': '../img/pokemon/kabutops.png'
+}, {
+    'name': 'aerodactyl',
+    'img': '../img/pokemon/aerodactyl.png'
+}, {
+    'name': 'snorlax',
+    'img': '../img/pokemon/snorlax.png'
+}, {
+    'name': 'articuno',
+    'img': '../img/pokemon/articuno.png'
+}, {
+    'name': 'zapdos',
+    'img': '../img/pokemon/zapdos.png'
+}, {
+    'name': 'moltres',
+    'img': '../img/pokemon/moltres.png'
+}, {
+    'name': 'dratini',
+    'img': '../img/pokemon/dratini.png'
+}, {
+    'name': 'dragonair',
+    'img': '../img/pokemon/dragonair.png'
+}, {
+    'name': 'dragonite',
+    'img': '../img/pokemon/dragonite.png'
+}, {
+    'name': 'mewtwo',
+    'img': '../img/pokemon/mewtwo.png'
+}, {
+    'name': 'mew',
+    'img': '../img/pokemon/mew.png'
+}]

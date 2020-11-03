@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/ashwall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: url('../img/card.png') no-repeat center center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: none !important;
+}
+img {
+    height: 200px;
+    margin: 5px 5px;
+ 
+}
+/* a {
+    color: white;
+} */
+/* a:hover {
+    color: blue;
+} */
+/*classes*/
+.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+.col-3 {
+    margin: 0px;
+    text-align: center;
+}
+.col-4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+.hr-size {
+    width: 80%;
+    height: 4px;
+    margin-top: 40px;
+    border-color: red;
+}
+/*id's*/
+#button-row {
+    text-align: center;
+    margin: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+#header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+.card {
+    background: none;
+    border: none;
+    
+}
