@@ -3,7 +3,9 @@ module.exports = function(sequelize, DataTypes) {
         username: DataTypes.STRING,
         password: DataTypes.STRING,
         highscore: DataTypes.INTEGER
-    }); return User;
+    },
+    {freezeTableName: true}
+    ); return User;
 };
 
 //can copy user.js from passport homework (require bcryptjs)
