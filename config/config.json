@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "pokemon",
+    "password": "Food414288!",
+    "database": "pokemon_db",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"

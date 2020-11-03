@@ -2,7 +2,7 @@ const path = require("path");
 let isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function (app) {
     app.get("/", function (req, res) {
-        console.log("YOU HIT THIS")
+       
         if (req.user) {
             res.redirect("/game");
         };
