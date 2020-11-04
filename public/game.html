@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,40 +11,75 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>POKEMON MEMORY GAME</title>
 </head>
+
 <body>
+
     <!-- header section -->
+
     <div class="container">
+
         <div class="row" id="header">
+
             <div class="col-4">
-                <h1>SCORE: 0</h1>
-                <!-- <span id="score"></span> -->
+                <h2>SCORE: <span id="score"></span></h2>
+                
             </div>
+
             <div class="col-4">
                 <h1>POKEMON MEMORY GAME</h1>
             </div>
-            <div class="col-4">
-                <div>Time Left: <span id="time"></span></div>
-                
-            </div>
-    </div>
-    <!-- button section -->
-    <div class="container">
-        <div class="row" id="button-row">
-            <div class="col-4">
-                <button id="start-btn" type="button" class="btn btn-danger btn-lg">START GAME</button>
-            </div>
-            <div class="col-4">
-                <h1>PLAYER GUESS COUNT: </h1>
-                <!-- <span id="something"></span> -->
-            </div>
-            <div class="col-4">
-                <button type="button" class="btn btn-danger btn-lg" onclick= "location.href = 'hiscores.html'">HISCORES</button>
-            </div>
-            <hr class="hr-size">
-        </div>
-    <div id="game"></div>
 
+            <div class="col-4">
+                <h2>TIME LEFT: <span id="time"></span></h2>
+            </div>
+
+        </div>
+
+        <!-- button section -->
+
+        <div class="container">
+
+            <div class="row" id="button-row">
+
+                <div class="col-4">
+                    <button id="start-btn" type="button" class="btn btn-danger btn-lg game-btns">START GAME</button>
+                </div>
+
+                <div class="col-4">
+                    <h2>PLAYER GUESS COUNT: <span id="guesses"></span></h2>                    
+                </div>
+
+                <div class="col-4">
+                    <button type="button" class="btn btn-danger btn-lg game-btns" onclick="location.href = 'hiscores.html'">HI-SCORES</button>
+                </div>                
+
+            </div>
+
+            <!-- game section -->
+
+            <hr class="hr-size">
+
+            <div id="game"></div>
+
+            <hr class="hr-size">
+
+            <!-- tagline section -->
+
+            <div class="row" id="header">
+
+                <div class="col-12">
+                    <h1>GOTTA MATCH 'EM ALL!</h1>
+                </div>
     
-    <script src="js/game.js"></script>
-    </body>
+            </div>
+    
+            
+        </div>
+
+    </div>
+
+            <script src="js/game.js"></script>
+
+</body>
+
 </html>
