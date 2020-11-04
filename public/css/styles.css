@@ -10,6 +10,18 @@ body {
     background-size: cover;
 }
 
+h1 {
+  color:white;
+  font-weight: bold;
+}
+
+h2 {
+  color: yellow;
+  font-weight: bold;
+}
+
+/*classes*/
+
 .grid {
   max-width: 960px;
   margin: 0 auto;
@@ -23,6 +35,8 @@ body {
   transition: all .4s linear;
   transform-style: preserve-3d;
   margin: 5px;
+  background: none;
+  border: none;    
 }
 
 .card,
@@ -44,8 +58,7 @@ body {
 }
 
 .back {
-  transform: rotateY(180deg);
-  
+  transform: rotateY(180deg);  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -58,37 +71,28 @@ body {
 .match .front {
   background: none !important;
 }
-img {
-    height: 200px;
-    margin: 5px 5px;
- 
-}
-/* a {
-    color: white;
-} */
-/* a:hover {
-    color: blue;
-} */
-/*classes*/
+
 .btn {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
 }
-.col-3 {
-    margin: 0px;
-    text-align: center;
-}
+
 .col-4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
 }
+
 .hr-size {
     width: 80%;
-    height: 4px;
-    margin-top: 40px;
-    border-color: red;
+    height: 6px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: red;
+    border-radius: 5px;
 }
+
 /*id's*/
+
 #button-row {
     text-align: center;
     margin: 20px;
@@ -98,15 +102,11 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
 }
+
 #header {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
-}
-.card {
-    background: none;
-    border: none;
-    
 }
