@@ -3,11 +3,19 @@
 *::after {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('PressStart2P.woff2') format('woff2'),
+      url('PressStart2P.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 body {
     background-image: url(../img/ashwall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
 }
 
 .grid {
@@ -71,7 +79,7 @@ img {
 } */
 /*classes*/
 .btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: xx-large;
 }
 .col-3 {
@@ -79,7 +87,7 @@ img {
     text-align: center;
 }
 .col-4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: xx-large;
 }
 .hr-size {
@@ -95,14 +103,14 @@ img {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: x-large;
 }
 #header {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: xx-large;
 }
 .card {
