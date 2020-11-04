@@ -179,25 +179,33 @@ function getScores() {
 }
 getScores()
 let rank = 1
+let color = 1
 function populateScores(users){
   users.forEach(user => {
   if (user.hiscore !== null){
     let rankDiv = $("<p>");
     let userDiv = $("<p>");
     let scoreDiv = $("<p>");
+    
     rankDiv.text(rank)
     userDiv.text(user.username)
     scoreDiv.text(user.hiscore)
-    // let rankSpan = $("<span>")
-    // rankSpan.text(rank)
-    // let scoreSpan = $("<span>")
-    // scoreSpan.text(user.hiscore)
-    
+    rankDiv.addClass("color"+color)
+    rankDiv.addClass("glow")
+    userDiv.addClass("color"+color)
+    userDiv.addClass("glow")
+    scoreDiv.addClass("color"+color)
+    scoreDiv.addClass("glow")
     $(".rankdiv").append(rankDiv)
     $(".userdiv").append(userDiv)
     $(".scorediv").append(scoreDiv)
     rank ++
-    console.log(rank)
+    color ++
+    console.log("color is " + color)
+    if (color > 3){
+      color = 1
+    }
+    
     }
     console.log(user.username + " " + user.hiscore)
     

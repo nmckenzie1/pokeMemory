@@ -11,19 +11,15 @@
   font-style: normal;
   font-display: swap;
 }
-
 a {
   color: yellow;
 }
-
 a:hover {
   color:white;
 }
-
 a:link {
   text-decoration: none;
 }
-
 body {
     background-image: url(../img/ash-bg.jpg);
     background-repeat: no-repeat;
@@ -31,24 +27,19 @@ body {
     background-color: #1663b1;
     font-family: 'Press Start 2P', Fallback, sans-serif;
 }
-
 h1 {
   color:white;
   font-family: 'Press Start 2P', Fallback, sans-serif;
 }
-
 h2 {
   color: yellow;
   font-family: 'Press Start 2P', Fallback, sans-serif;
 }
-
 /*classes*/
-
 .game-btns {
-  max-width: 75%;
-  min-width: 75%
+  max-width: 85%;
+  min-width: 85%
 }
-
 .grid {
   max-width: 960px;
   margin: 0 auto;
@@ -56,7 +47,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .card {
   position: relative;
   transition: all .4s linear;
@@ -65,20 +55,17 @@ h2 {
   background: none;
   border: none;    
 }
-
 .card,
 .back,
 .front {
   height: 150px;
   width: 150px;
 }
-
 .back,
 .front {
   position: absolute;
   backface-visibility: hidden;
 }
-
 .footer {
   position: fixed;
   padding-top: 30px;
@@ -94,33 +81,27 @@ h2 {
   margin-top: 20px;
   font-size: 20px;
 }
-
 .front {
   z-index: 2;
   background: url('../img/card.png') no-repeat center center / contain;
 }
-
 .back {
   transform: rotateY(180deg);  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .selected {
   transform: rotateY(180deg);
 }
-
 .match .front {
   background: none !important;
 }
-
 .btn {
     font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: xx-large;
     border: 4px solid white;
 }
-
 .hr-size {
     width: 80%;
     height: 6px;
@@ -129,9 +110,7 @@ h2 {
     background-color: red;
     border-radius: 5px;
 }
-
 /*id's*/
-
 #button-row {
     text-align: center;
     margin: 20px;
@@ -141,7 +120,6 @@ h2 {
     font-family: 'Press Start 2P', Fallback, sans-serif;
     font-size: x-large;
 }
-
 #header {
     text-align: center;
     padding-top: 20px;

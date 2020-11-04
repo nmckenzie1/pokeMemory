@@ -26,7 +26,19 @@ module.exports = function(app){
           res.json(dbUser);
         });
       });
-      
+     app.put("/api/user_data", function (req, res){
+       console.log(req.body)
+       db.User.update({
+         hiscore: req.body.hiscore
+       }, {
+         where: {
+           username: req.user.username
+         }
+       }).then(function(data){
+         console.log(data)
+         res.json(data)
+       })
+     }) 
       
       
       app.get("/api/user_data", function(req, res) {
@@ -42,4 +54,5 @@ module.exports = function(app){
           });
         }
       })};
+
       

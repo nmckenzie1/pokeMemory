@@ -1,47 +1,29 @@
-const cardsArray = [{
-    'name': 'bulbasaur',
-    'img': '../img/pokemon/bulbasaur.png'
-}, {
-    'name': 'ivysaur',
-    'img': '../img/pokemon/ivysaur.png'
-}, {
-    'name': 'venusaur',
-    'img': '../img/pokemon/venusaur.png'
-}, {
-    'name': 'charmander',
-    'img': '../img/pokemon/charmander.png'
-}, {
-    'name': 'charmeleon',
-    'img': '../img/pokemon/charmeleon.png'
-}, {
-    'name': 'charizard',
-    'img': '../img/pokemon/charizard.png'
-}, {
-    'name': 'squirtle',
-    'img': '../img/pokemon/squirtle.png'
-}, {
-    'name': 'wartortle',
-    'img': '../img/pokemon/wartortle.png'
-}, {
-    'name': 'blastoise',
-    'img': '../img/pokemon/blastoise.png'
-}, {
-    'name': 'caterpie',
-    'img': '../img/pokemon/caterpie.png'
-}, {
-    'name': 'metapod',
-    'img': '../img/pokemon/metapod.png'
-}, {
-    'name': 'butterfree',
-    'img': '../img/pokemon/butterfree.png'
-},];
+
 
 
 
 const startBtn = document.getElementById("start-btn")
-const gameGrid = cardsArray
+function startGame(){
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  shuffleArray(pokemon)
+  cardsArray = [];
+  for (let i = 0; i < 12; i++) {
+  cardsArray.push({
+  name: `${pokemon[i]['name']}`,
+  img: `img/pokemon/${pokemon[i]['name']}.png`
+            });
+          }
+         
+      console.log(cardsArray)
+  const gameGrid = cardsArray
   .concat(cardsArray)
   .sort(() => 0.5 - Math.random());
+  
 
 let firstGuess = '';
 let secondGuess = '';
@@ -91,7 +73,12 @@ const resetGuesses = () => {
     card.classList.remove('selected');
   });
 };
-
+let score = 0
+let moves = 0
+let movesSpan = document.getElementById("moves")
+movesSpan.innerText = moves
+let scoreSpan = document.getElementById("score")
+    scoreSpan.innerText = score
 grid.addEventListener('click', event => {
 
   const clicked = event.target;
@@ -114,11 +101,15 @@ grid.addEventListener('click', event => {
     } else {
       secondGuess = clicked.parentNode.dataset.name;
       console.log(secondGuess);
+      ++moves
+      movesSpan.innerText = moves
       clicked.parentNode.classList.add('selected');
     }
 
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
+        score++
+        scoreSpan.innerText = score
         setTimeout(match, delay);
       }
       setTimeout(resetGuesses, delay);
@@ -127,7 +118,9 @@ grid.addEventListener('click', event => {
   }
 
 });
-
+var oneMinute = 60 * 1,
+display = document.querySelector('#time');
+startTimer(oneMinute, display);
 function startTimer(duration, display) {
     var timer = duration, seconds;
     setInterval(function () {
@@ -139,13 +132,28 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             timer = duration;
         }
+        if (timer === 0){
+          endGame(score) 
+         
+        }
     }, 1000);
   }
 
-  startBtn.onclick = function () {
-    console.log("you clicked me bitch")
-    var oneMinute = 60 * 1,
-        display = document.querySelector('#time');
-    startTimer(oneMinute, display);
+  
+ function endGame(score) {
+  $.ajax({
+    method: "PUT",
+    url: "/api/user_data",
+    data: {hiscore: score}
+   
+  
+  }).then(function(res){
+     console.log(res)
+     window.location.href = "hiscores.html"
+   })
+ }
+}
+startBtn.onclick = function () {
+   startGame()
+   
   };
- 

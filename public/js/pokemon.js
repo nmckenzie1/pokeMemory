@@ -1,4 +1,4 @@
-const cardsArray = [{
+const pokemon = [{
     'name': 'bulbasaur',
     'img': '../img/pokemon/bulbasaur.png'
 }, {
