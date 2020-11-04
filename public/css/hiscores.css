@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('PressStart2P.woff2') format('woff2'),
+        url('PressStart2P.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body, html {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
+}
+canvas {
+    position:absolute;
+    top:0;
+    left:0
+}
