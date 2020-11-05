@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>POKÉMEMORY | LOGIN</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="css/signup.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/ico32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/ico16x16.ico">
+ 
 </head>
 
 <body>
@@ -19,7 +22,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
+        <img src="https://fontmeme.com/permalink/201105/daf54c96306cc990c0b31748f6d509c7.png"> <br><br>
+        <h4 class= "text-center">Login or Sign Up to Play</h4> <hr>
         <form class="login">
           <div class="form-group">
             <label for="usernameInput">Username</label>
@@ -29,17 +33,37 @@
             <label for="passwordInput">Password</label>
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-default">Login</button>
+          <button type="submit" class="btn btn-default login">Login</button>
+          <button type="button" class="signup btn btn-danger">Sign-Up</button>
         </form>
-        <br />
-        <p>Or sign up <a href="/signup">here</a></p>
+        
       </div>
     </div>
   </div>
-
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
 
 </body>
+<div class="footer">
+
+  <div class="row">
+
+      <div class="col-md-4">
+          <p>&copy; 2020 TEAM QUILAVA</p>
+          
+      </div>
+
+      <div class="col-md-4">
+          <p>POKÉMON MEMORY GAME</p>
+      </div>
+
+      <div class="col-md-4">
+          <p>CONTACT DEVS: <a href="https://github.com/nmckenzie1/pokeMemory">GITHUB</a></p>
+      </div>
+
+  </div>
+
+</div>
 
 </html>

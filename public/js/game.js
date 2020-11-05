@@ -138,22 +138,34 @@ function startTimer(duration, display) {
         }
     }, 1000);
   }
-
-  
+   
  function endGame(score) {
+  $.get("/api/user_data", function(data) {
+    console.log(data)
+    console.log(data.hiscore + " data dot highscore")
+    if(data.hiscore === null){
+      updatescore(score)
+    }
+    else if (parseInt(score) > parseInt(data.hiscore)){
+      updatescore(score)
+    }else{
+      window.location.href = "hiscores.html" 
+    }
+    })
+   };
+}
+function updatescore(score){
+  console.log("YOU HIT ME")
   $.ajax({
     method: "PUT",
     url: "/api/user_data",
     data: {hiscore: score}
-   
-  
   }).then(function(res){
      console.log(res)
      window.location.href = "hiscores.html"
-   })
- }
+   });
 }
+
 startBtn.onclick = function () {
    startGame()
-   
-  };
+};

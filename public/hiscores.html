@@ -2,26 +2,29 @@
 <html lang="en">
 
 <head>
-  <title>HISCORES</title>
+  <title>POKÉMEMORY | HISCORES</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="css/hiscores.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/ico32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/ico16x16.ico">
 </head>
 
 <body>
-  <canvas id="bgCanvas"></canvas>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      
+  <nav class="navbar navbar-default text-center">
+    <div class="container-fluid">
+      <div class="text-center">
+        <h2 class="text-center"><a class= "color1 text-center" href=game.html>Play Again?</a></h2>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <canvas id="bgCanvas"></canvas>
+  
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center scoresholder">
-        <h1 class= color1>HISCORES!</h1>
+        <h1 class= color1><u>HISCORES</u></h1><br>
       <div class="row">
         <div class="col-md-4 text-center rankdiv"><p>Rank</p></div>
         <div class="col-md-4 text-center userdiv"><p>Username</p></div>
@@ -32,9 +35,30 @@
     </div>
   </div>
 
+
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/hiscores.js"></script>
-
 </body>
+<div class="footer">
+
+  <div class="row">
+
+      <div class="col-md-4">
+          <p>&copy; 2020 TEAM QUILAVA</p>
+          
+      </div>
+
+      <div class="col-md-4">
+          <p>POKÉMON MEMORY GAME</p>
+      </div>
+
+      <div class="col-md-4">
+          <p>CONTACT DEVS: <a href="https://github.com/nmckenzie1/pokeMemory">GITHUB</a></p>
+      </div>
+
+  </div>
+
+</div>
 
 </html>
