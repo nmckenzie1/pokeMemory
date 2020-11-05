@@ -143,7 +143,10 @@ function startTimer(duration, display) {
   $.get("/api/user_data", function(data) {
     console.log(data)
     console.log(data.hiscore + " data dot highscore")
-    if (parseInt(score) > parseInt(data.hiscore) || data.highscore === null){
+    if(data.hiscore === null){
+      updatescore(score)
+    }
+    else if (parseInt(score) > parseInt(data.hiscore)){
       updatescore(score)
     }else{
       window.location.href = "hiscores.html" 
@@ -152,6 +155,7 @@ function startTimer(duration, display) {
    };
 }
 function updatescore(score){
+  console.log("YOU HIT ME")
   $.ajax({
     method: "PUT",
     url: "/api/user_data",
