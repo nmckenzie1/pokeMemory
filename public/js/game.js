@@ -143,7 +143,7 @@ function startTimer(duration, display) {
   $.get("/api/user_data", function(data) {
     console.log(data)
     console.log(data.hiscore + " data dot highscore")
-    if (parseInt(score) > parseInt(data.hiscore)){
+    if (parseInt(score) > parseInt(data.hiscore) || data.highscore === null){
       updatescore(score)
     }else{
       window.location.href = "hiscores.html" 
