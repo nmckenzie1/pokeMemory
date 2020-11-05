@@ -144,7 +144,8 @@ h3, h4 {
 
 #button-row {
     text-align: center;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #header, 
@@ -156,4 +157,13 @@ h3, h4 {
 #top-container {
   margin-top: 25px;
   max-width: 80%;
+}
+
+@media only screen and (max-width: 816px ) {
+  .pad-cell {
+    display: none;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
 }
