@@ -159,6 +159,50 @@ h3, h4 {
   max-width: 80%;
 }
 
+#start-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: white;
+  color: red;
+}
+#start-btn span:after {
+  content: “\00bb”;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#start-btn:hover span {
+  padding-right: 25px;
+}
+#start-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#highscore-btn:hover {
+  transition: 0.5s ease-in-out;
+  background: white;
+  color: red;
+}
+#highscore-btn span:after {
+  content: “\00bb”;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#highscore-btn:hover span {
+  padding-right: 25px;
+}
+#highscore-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* media querys */
+
 @media only screen and (max-width: 816px ) {
   .pad-cell {
     display: none;
