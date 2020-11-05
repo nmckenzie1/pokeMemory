@@ -16,93 +16,114 @@
 
 <body>
 
-    <!-- header section -->
+
 
     <div class="container">
 
-        <div class="row" id="header">
+        <!-- header section -->
 
-            <div class="col-4">
-                <h2>SCORE: <br><span id="score"></span></h2>
-                
+        <div class="row" id="score-data">
+
+            <div class="col">
+                <h4>SCORE: <br><span id="score"></span></h4>                
             </div>
 
-            <div class="col-4">
+            <div class="col">
+                <h4>TIME LEFT: <br><span id="time"></span></h4>
+            </div>
+
+        </div>
+        
+        <div class="row" id="header">
+
+            <div class="col">
+            </div>
+
+            <div class="col">
                 <h1>POKEMON MEMORY GAME</h1>
             </div>
 
-            <div class="col-4">
-                <h2>TIME LEFT: <br><span id="time"></span></h2>
+            <div class="col">
             </div>
 
         </div>
 
         <!-- button section -->
 
-        <div class="container">
+        <div class="row" id="button-row">
 
-            <div class="row" id="button-row">
-
-                <div class="col-4">
-                    <button id="start-btn" type="button" class="btn btn-danger btn-lg game-btns">START GAME</button>
-                </div>
-
-                <div class="col-4">
-                    <h2>PLAYER GUESS COUNT: <span id="moves"></span></h2>                    
-                </div>
-
-                <div class="col-4">
-                    <button type="button" class="btn btn-danger btn-lg game-btns" onclick="location.href = 'hiscores.html'">HI-SCORES</button>
-                </div>                
-
+            <div class="col">
+                <button id="start-btn" type="button" class="btn btn-danger btn-lg game-btns">START GAME</button>
             </div>
 
-            <!-- game section -->
-
-            <hr class="hr-size">
-
-            <div id="game"></div>
-
-            <hr class="hr-size">
-
-            <!-- tagline section -->
-
-            <div class="row" id="header">
-
-                <div class="col-12">
-                    <h1>"GOTTA MATCH 'EM ALL!"</h1>
-                </div>
-    
-            </div>
-    
+            <div class="col">
+                <button type="button" class="btn btn-danger btn-lg game-btns" onclick="location.href = 'hiscores.html'">HI-SCORES</button>
+            </div>  
             
         </div>
 
-    </div>
+        <!-- guesses section -->
 
-    <div class="footer">
+        <div class="row" id="score-data">
 
-        <div class="row">
-
-            <div class="col-4">
-                <p>&copy; 2020 TEAM QUILAVA</p>
-                
-            </div>
-
-            <div class="col-4">
-                <p>POKEMON MEMORY GAME</p>
-            </div>
-
-            <div class="col-4">
-                <p>CONTACT DEVS: <a href="https://github.com/nmckenzie1/pokeMemory">GITHUB</a></p>
+            <div class="col">
+                <h4>PLAYER GUESS COUNT: <span id="moves"></span></h4>                    
             </div>
 
         </div>
 
+        <!-- game section -->
+
     </div>
-            <script src="js/pokemon.js"></script>
-            <script src="js/game.js"></script>
-            
+
+        <hr class="hr-size">
+
+        <div id="game"></div>
+
+        <hr class="hr-size">
+
+
+        <!-- tagline section -->
+        
+    <div class="container">
+        
+        <div class="row" id="tagline">
+
+            <div class="col">
+                <h5>"GOTTA MATCH 'EM ALL!"</h5>
+            </div>
+
+        </div>
+
+
+        <!-- footer section -->
+
+
+        <div class="footer">
+
+            <div class="row">
+
+                <div class="col">
+                    <p>&copy; 2020 TEAM QUILAVA</p>
+                    
+                </div>
+
+                <div class="col">
+                    <p>POKEMON MEMORY GAME</p>
+                </div>
+
+                <div class="col">
+                    <p>CONTACT DEVS: <a href="https://github.com/nmckenzie1/pokeMemory">GITHUB</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="js/pokemon.js"></script>
+    <script src="js/game.js"></script>            
             
 </body>
 
