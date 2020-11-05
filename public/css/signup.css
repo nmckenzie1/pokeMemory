@@ -1,5 +1,30 @@
-body {
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('PressStart2P.woff2') format('woff2'),
+        url('PressStart2P.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
     background-image: url(../img/pkmnbkgrnd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #1663b1;
+    font-family: 'Press Start 2P', Fallback, sans-serif;
+    margin-bottom: 4%;
 }
+.footer {
+    position: fixed;
+    padding-top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    border-top: 5px solid white;
+  }
+
