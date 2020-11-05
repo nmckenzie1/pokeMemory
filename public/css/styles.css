@@ -29,25 +29,20 @@ body {
     background-image: url(../img/ash-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-x: center; */
     background-color: #1663b1;
     font-family: 'Press Start 2P', Fallback, sans-serif;
+    margin-bottom: 4%;
 }
 
-h1 {
+h1, h5 {
   color:white;
 }
 
-h3, h4, h5 {
+h3, h4 {
   color: yellow;
 }
 
 /*classes*/
-
-/* .game-btns {
-  max-width: 65%;
-  min-width: 65%
-} */
 
 .grid {
   max-width: 960px;
@@ -79,18 +74,6 @@ h3, h4, h5 {
   backface-visibility: hidden;
 }
 
-.footer {
-  position: fixed;
-  padding-top: 20px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #dc3545;
-  color: white;
-  text-align: center;
-  font-size: 10px;
-}
-
 .front {
   z-index: 2;
   background: url('../img/card.png') no-repeat center center / contain;
@@ -118,34 +101,37 @@ h3, h4, h5 {
 .hr-size {
     width: 80%;
     height: 6px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #dc3545;
     border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  padding-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #dc3545;
+  color: white;
+  text-align: center;
+  font-size: 10px;
 }
 
 /*id's*/
 
 #button-row {
-    /* margin: 20px; */
     text-align: center;
-    /* padding-top: 40px; */
     padding-bottom: 40px;
-    /* font-family: 'Press Start 2P', Fallback, sans-serif; */
-    /* font-size: x-large; */
 }
 
-#header {
-    text-align: center;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
-    /* font-size: xx-large; */
-}
-
-#score-data {
-  text-align: center;
-}
-
+#header, 
+#score-data, 
 #tagline {
-  text-align: center;
+    text-align: center;
+}
+
+#top-container {
+  margin-top: 25px;
 }
