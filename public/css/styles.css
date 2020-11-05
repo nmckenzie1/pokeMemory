@@ -34,8 +34,12 @@ body {
     margin-bottom: 4%;
 }
 
-h1, h5 {
-  color:white;
+h1, h6 {
+  color: white;
+}
+
+h5 {
+  color: yellow;
 }
 
 h3, h4 {
@@ -64,8 +68,8 @@ h3, h4 {
 .card,
 .back,
 .front {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .back,
@@ -99,12 +103,29 @@ h3, h4 {
 }
 
 .hr-size {
-    width: 80%;
+    width: 60%;
     height: 6px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #dc3545;
     border-radius: 5px;
+}
+
+@import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: #dc3545;}
+    to {color: yellow;}
 }
 
 .footer {
@@ -134,4 +155,5 @@ h3, h4 {
 
 #top-container {
   margin-top: 25px;
+  max-width: 80%;
 }
