@@ -127,7 +127,9 @@ h3, h4 {
     from {color: #dc3545;}
     to {color: yellow;}
 }
-
+.endgame{
+  text-align: center;
+}
 .footer {
   position: fixed;
   padding-top: 20px;
