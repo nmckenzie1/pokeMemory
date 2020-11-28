@@ -2,7 +2,7 @@ const db = require("../models")
 const passport = require("../config/passport");
 module.exports = function(app){
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
-    res.json(req.user);
+    return res.json(req.user);
   });
   app.post("/api/signup", function(req, res) {
         db.User.create({
@@ -11,10 +11,10 @@ module.exports = function(app){
           
         })
           .then(function() {
-            res.redirect(307, "/api/login");
+            return  res.redirect(307, "/api/login");
           })
           .catch(function(err) {
-            res.status(401).json(err);
+            return  res.status(401).json(err);
           });
       });
       app.get("/api/users", function(req, res) {
@@ -23,7 +23,7 @@ module.exports = function(app){
           order:[["hiscore", "DESC"]]
         }).then(function(dbUser) {
           // We have access to the todos as an argument inside of the callback function
-          res.json(dbUser);
+          return res.json(dbUser);
         });
       });
      app.put("/api/user_data", function (req, res){
@@ -36,7 +36,7 @@ module.exports = function(app){
          }
        }).then(function(data){
          console.log(data)
-         res.json(data)
+         return res.json(data)
        })
      }) 
       
@@ -44,11 +44,11 @@ module.exports = function(app){
       app.get("/api/user_data", function(req, res) {
         if (!req.user) {
           // The user is not logged in, send back an empty object
-          res.json({});
+         return res.json({});
         } else {
           // Otherwise send back the user's email and id
           // Sending back a password, even a hashed password, isn't a good idea
-          res.json({
+          return res.json({
             username: req.user.username,
             hiscore: req.user.hiscore
           });
