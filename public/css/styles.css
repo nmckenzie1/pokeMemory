@@ -68,8 +68,14 @@ h3, h4 {
 .card,
 .back,
 .front {
-  height: 100px;
-  width: 100px;
+  height: 8em;
+  width: 8em;
+}
+@media only screen and (max-width: 576px) {
+  .front {
+    height: 5em;
+    width: 5em;
+  }
 }
 
 .back,
@@ -138,6 +144,7 @@ h3, h4 {
   color: white;
   text-align: center;
   font-size: 10px;
+  border-top: 5px solid white;
 }
 
 /*id's*/

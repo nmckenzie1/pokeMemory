@@ -7,8 +7,6 @@
     font-display: swap;
 }
 
-
-
 body, html {
     background-color: #000;
     color: #fff;
@@ -24,35 +22,90 @@ canvas {
     top:0;
     left:0
 }
-
-.glow {
-    font-size: 25px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-
-
-
-
-  
-@keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 50px #ff4da6;
-    }
-  }
-
-  .color1 {
-    color: red
+.navbar{
+  z-index: 1;
+background-color: black;
 }
+/* .rankdiv{
+  z-index: 1;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+}
+.userdiv{
+  z-index: 1;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+}
+.scorediv{
+  z-index: 1;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+} */
+.color1 {
+  animation-name: flash1;
+   animation-duration:1.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-play-state: running;
+}
+
+@keyframes flash1 {
+   from {color: #dc3545;}
+   to {color: yellow;}
+}
+
 .color2 {
+  animation-name: flash2;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-play-state: running;
+}
+
+@keyframes flash2 {
+   from {color:green;}
+   to {color: yellow;}
+}
+.color3 {
+  animation-name: flash3;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-play-state: running;
+}
+
+@keyframes flash3 {
+   from {color: purple;}
+   to {color: yellow;}
+}
+
+.footer {
+  z-index: 1;
+  position: fixed;
+  padding-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  border-top: 5px solid white;
+ 
+ 
+}
+/* .color1 {
+    color: red
+} */
+/* .color2 {
     color:green
 }
 .color3 {
     color: yellow
-}
+} */

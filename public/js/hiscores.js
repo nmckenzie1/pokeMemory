@@ -207,7 +207,5 @@ function populateScores(users){
     }
     
     }
-    console.log(user.username + " " + user.hiscore)
-    
-  });
+    });
 }
