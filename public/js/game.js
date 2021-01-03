@@ -175,7 +175,6 @@ function startTimer(duration, display) {
    };
 }
 function updatescore(score){
-  console.log("YOU HIT ME")
   $.ajax({
     method: "PUT",
     url: "/api/user_data",
