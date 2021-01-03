@@ -182,7 +182,7 @@ let rank = 1
 let color = 1
 function populateScores(users){
   users.forEach(user => {
-  if (user.hiscore !== null){
+  if (user.hiscore !== null && user.hiscore > 0){
     let rankDiv = $("<p>");
     let userDiv = $("<p>");
     let scoreDiv = $("<p>");

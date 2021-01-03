@@ -4,6 +4,7 @@
 
 const startBtn = document.getElementById("start-btn")
 function startGame(){
+  document.getElementById("start-btn").disabled = true;
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -33,6 +34,7 @@ let delay = 1200;
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
+game.innerHTML = "";
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
@@ -123,7 +125,7 @@ display = document.querySelector('#time');
 startTimer(oneMinute, display);
 function startTimer(duration, display) {
     var timer = duration, seconds;
-    setInterval(function () {
+    let bob = setInterval(function () {
         
         seconds = parseInt(timer % 60, 10);
         
@@ -133,7 +135,9 @@ function startTimer(duration, display) {
             timer = duration;
         }
         if (timer === 0){
-          endGame(score) 
+          endGame(score)
+          display.innerText = "TIMES UP"
+          clearInterval(bob)
          
         }
     }, 1000);
@@ -141,12 +145,31 @@ function startTimer(duration, display) {
    
  function endGame(score) {
   $.get("/api/user_data", function(data) {
-    console.log(data)
-    console.log(data.hiscore + " data dot highscore")
-    if (parseInt(score) > parseInt(data.hiscore)){
+    let game = document.getElementById("game");
+    game.innerHTML = "";
+    const card = document.createElement('h2');
+    card.innerText = "GAME OVER"
+    card.classList.add('endgame');
+    card.classList.add('flash');
+    game.appendChild(card)
+    document.getElementById("start-btn").disabled = false;
+    if(data.hiscore === null){
       updatescore(score)
+      let hstext = document.createElement('h2');
+      hstext.innerText = "NEW HISCORE!!"
+      hstext.classList.add('endgame');
+      hstext.classList.add('flash');
+      game.appendChild(hstext)
+    }
+    else if (parseInt(score) > parseInt(data.hiscore)){
+      updatescore(score)
+      let hstext = document.createElement('h2');
+      hstext.innerText = "NEW HISCORE!!"
+      hstext.classList.add('endgame');
+      hstext.classList.add('flash');
+      game.appendChild(hstext)
     }else{
-      window.location.href = "hiscores.html" 
+      
     }
     })
    };
@@ -158,10 +181,9 @@ function updatescore(score){
     data: {hiscore: score}
   }).then(function(res){
      console.log(res)
-     window.location.href = "hiscores.html"
+     game.empty()
    });
 }
 
-startBtn.onclick = function () {
-   startGame()
-};
+startBtn.addEventListener('click', () =>{startGame()})
+   
